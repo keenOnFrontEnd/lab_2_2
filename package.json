@@ -1,0 +1,40 @@
+{
+  "name": "lab_2_1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src",
+    "debug": "cross-env NODE_ENV=development DEBUG=express:* tsx watch src",
+    "prod": "cross-env NODE_ENV=production tsx watch src",
+    "build": "tsc --build && tsc-alias",
+    "bundle": "parcel build build/index.js",
+    "mikro-orm": "npx mikro-orm-esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^6.4.0",
+    "@mikro-orm/core": "^6.4.0",
+    "@mikro-orm/migrations": "^6.4.0",
+    "@mikro-orm/mssql": "^6.4.0",
+    "@mikro-orm/reflection": "^6.4.0",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.0",
+    "@types/swagger-ui-express": "^4.1.7",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "reflect-metadata": "^0.2.2",
+    "swagger-ui-express": "^5.0.1",
+    "tsx": "^4.19.2"
+  }
+}
